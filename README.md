@@ -1,4 +1,5 @@
 ##Library Management 
+
 Project Overview
 Project Title: Library Management System
 Database: library_db
@@ -9,6 +10,7 @@ This project demonstrates the implementation of a Library Management System usin
 ##Library_project
 
 #Objectives
+
 Set up the Library Management System Database: Create and populate the database with tables for branches, employees, members, books, issued status, and return status.
 CRUD Operations: Perform Create, Read, Update, and Delete operations on the data.
 CTAS (Create Table As Select): Utilize CTAS to create new tables based on query results.
@@ -22,18 +24,18 @@ Table Creation: Created tables for branches, employees, members, books, issued s
 CREATE DATABASE library;
 
 DROP TABLE IF EXISTS branch;
-CREATE TABLE branch
+'''CREATE TABLE branch
 (
             branch_id VARCHAR(10) PRIMARY KEY,
             manager_id VARCHAR(10),
             branch_address VARCHAR(30),
             contact_no VARCHAR(15)
-);
+);'''
 
 
 -- Create table "Employee"
 DROP TABLE IF EXISTS employees;
-CREATE TABLE employees
+'''CREATE TABLE employees
 (
             emp_id VARCHAR(10) PRIMARY KEY,
             emp_name VARCHAR(30),
@@ -41,7 +43,7 @@ CREATE TABLE employees
             salary DECIMAL(10,2),
             branch_id VARCHAR(10),
             FOREIGN KEY (branch_id) REFERENCES  branch(branch_id)
-);
+);'''
 
 
 -- Create table "Members"
