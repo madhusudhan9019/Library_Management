@@ -22,9 +22,9 @@ ERD
 Database Creation: Created a database named library.
 Table Creation: Created tables for branches, employees, members, books, issued status, and return status. Each table includes relevant columns and relationships.
 CREATE DATABASE library;
-
+'''sql
 DROP TABLE IF EXISTS branch;
-''' CREATE TABLE branch
+CREATE TABLE branch
 (
             branch_id VARCHAR(10) PRIMARY KEY,
             manager_id VARCHAR(10),
